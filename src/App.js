@@ -1,19 +1,16 @@
 import React from 'react';
+import "./Components/css/App.css"
+import GetCoinsList from './Components/GetCoinsList';
 
-import './App.css';
-import Heading from './Heading.js';
-import Body from './Body.js';
-
-function App()
-{
-  return(
+function App() {
+  return (
     <div className="App">
-      
-      <Heading />
-      <Body />
-    
+      <div className="headingStyles">
+        {/* Title */}
+          <h1>Crypto Wiki</h1>
+          <GetCoinsList/>
+        </div>
     </div>
-  
   );
 }
 
